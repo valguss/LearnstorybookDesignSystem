@@ -20,7 +20,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: yarn test
-      - run: yarn chromatic test --app-code=<app-code> --exit-zero-on-changes
+      - run: yarn chromatic test --app-code=k7v7pdf26eo --exit-zero-on-changes
 workflows:
   build-and-test:
     jobs:
